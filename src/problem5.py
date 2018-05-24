@@ -136,10 +136,15 @@ def problem5(m, numbers1, numbers2):
       :type [str]
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
-
+    list = []
+    for k in range(len(numbers1)):
+        if numbers1[k] * m == numbers2[k]:
+                list.append(numbers1[k])
+                list.append(numbers2[k])
+    return list
 
 ###############################################################################
 # Our tests use the following to print error messages in red.
