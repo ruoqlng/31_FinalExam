@@ -93,8 +93,10 @@ And this one for n=14:
             print(' ',end='')
         for a in range(k + 1):
             print((a + 1) % 10, end='')
+        print(' ', end='')
         for _ in range(k + 2):
             print('*', end='')
+        print(' ', end='')
         for b in range(n - k):
             print((n - k - b) % 10, end='')
         print()
